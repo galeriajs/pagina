@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Hecho por :Arturo Antonio Jacome, Jossam Alberto Barojas García, Dario Abimael Gonzalez Ocampo y Joshua Luna Villalvazo-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galeria.css">
+    <title>Galeria</title>
+</head>
+<body>
+    <h1>Galería de lenguajes de programación para webs</h1>
+    <div class="galeria">
+        <center>
+        <div class="imagenes">
+            <img onmousedown="unclic(this)" onmouseup="solarclic(this)" onmouseenter="entrar(this)" onmouseleave="salir(this)" ondblclick="dobleclic(1)" src="php.png" alt="PHP">
+        </div>
+        </center>
+    </div>
+
+    <div class="galeria">
+        <center>
+        <div class="imagenes">
+            <img onmousedown="unclic(this)" onmouseup="solarclic(this)" onmouseenter="entrar(this)" onmouseleave="salir(this)" ondblclick="dobleclic(2)" src="java-script.jpg" alt="JavaScript">
+        </div>
+        </center>
+    </div>
+
+    <div class="galeria">
+        <center>
+        <div class="imagenes">
+            <img onmousedown="unclic(this)" onmouseup="solarclic(this)" onmouseenter="entrar(this)" onmouseleave="salir(this)" ondblclick="dobleclic(3)" src="CSS.jpg" alt="CSS">
+        </div>
+        </center>
+    </div>
+
+    <script>
+        function unclic(x){
+            x.style.height ="230px";
+            x.style.width = "340px"
+        }
+
+        function solarclic(y){
+            y.style.height ="190px";
+            y.style.width = "280px"    
+        }
+
+        function entrar(x){
+            x.style.border = "thick solid #00FE32";
+        }
+
+        function salir(y){
+            y.style.border = "none";
+        }
+
+        function dobleclic(x){
+            if(x == 1){
+                alert("PHP: Hypertext Pre-Processor, es decir, pre-procesador de hipertexto. Es un lenguaje de programación de propósito general que se ejecuta en el lado del servidor. Es un lenguaje interpretado.");
+            }
+            else{
+                if (x == 2) {
+                    alert("JavaScript: Es un lenguaje de programación que se usa para procesar información y manipular documentos.");  
+                }
+                else{
+                    alert("CSS: Es un lenguaje que facilita instrucciones que podemos usar para asignar estilos a los elementos HTML, como colores, tipos de letra, tamaños, etc.");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

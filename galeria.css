@@ -1,0 +1,15 @@
+h1{
+    color:greenyellow;
+    font-style: italic;
+    text-align: center;
+
+}
+body{
+    background: url(2.jpg);
+}
+img{
+    height:190px;
+    width:280px;
+    object-fit: cover;
+    }
+
